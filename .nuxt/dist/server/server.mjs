@@ -1,1 +1,1 @@
-export { default } from "file:///home/reuben/.Documents/Admin_AgriLink/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
+export { default } from "file:///home/reuben/.Documents/Admin_AgriLink-1/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

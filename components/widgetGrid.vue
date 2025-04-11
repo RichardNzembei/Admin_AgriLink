@@ -146,25 +146,28 @@ const dashboardData = ref({
           </li>
         </ul>
       </div>
-      <div class="flex items-center justify-between mt-6">
-        <NuxtLink
-          to="/regulations"
-          class="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold text-sm hover:bg-blue-200 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-colors duration-200"
-          aria-label="View Details"
-        >
-          View Details
-          <Icon name="i-lucide-arrow-right" class="h-5 w-5" />
-        </NuxtLink>
-        <UBadge
-          :text="dashboardData.regulations.notifications"
-          color="red"
-          size="lg"
-          class="font-semibold"
-        >
-          <template #prefix>
-            <Icon name="i-lucide-bell" class="h-4 w-4 text-red-500" />
-          </template>
-        </UBadge>
+      <div class="mt-6">
+        <UButtonGroup size="sm" class="flex justify-between">
+          <UButton
+            to="/regulations"
+            label="View Details"
+            icon="i-lucide-arrow-right"
+            color="blue"
+            variant="soft"
+            class="font-semibold rounded-full"
+            aria-label="View Details"
+          />
+          <UButton
+            to="/regulations/notifications"
+            :label="String(dashboardData.regulations.notifications)"
+            icon="i-lucide-bell"
+            color="red"
+            variant="solid"
+            class="font-semibold rounded-full"
+            :class="{ 'animate-pulse': dashboardData.regulations.notifications > 0 }"
+            :aria-label="`${dashboardData.regulations.notifications} new notifications`"
+          />
+        </UButtonGroup>
       </div>
     </div>
   </div>
