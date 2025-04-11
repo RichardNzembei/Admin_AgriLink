@@ -1,0 +1,19 @@
+{
+    "admins":[
+        {
+            "role": "superAdmin",
+            "adminId": "X0agri#1",
+            "passKey": "agriLink#1"
+        },
+        {
+            "role": "admin",
+            "adminId": "X0agri#2",
+            "passKey": "agriLink#2"
+        },
+        {
+            "role": "editor",
+            "adminId": "X0agri#3",
+            "passKey": "agriLink#3"
+        }
+    ]
+}
