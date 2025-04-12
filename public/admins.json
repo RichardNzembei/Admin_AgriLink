@@ -3,17 +3,26 @@
         {
             "role": "superAdmin",
             "adminId": "X0agri#1",
-            "passKey": "agriLink#1"
+            "passKey": "agriLink#1",
+            "name": "Richard Nzembei",
+            "mail": "rnzembei@agrilink.ac.ke",
+            "category": "CEO"
         },
         {
             "role": "admin",
             "adminId": "X0agri#2",
-            "passKey": "agriLink#2"
+            "passKey": "agriLink#2",
+            "name": "Mwendwa Reuben",
+            "mail": "mreuben@agrilink.ac.ke",
+            "category": "CTO"
         },
         {
             "role": "editor",
             "adminId": "X0agri#3",
-            "passKey": "agriLink#3"
+            "passKey": "agriLink#3",
+            "name": "Ndambuki Reuben",
+            "mail": "nreuben@agrilink.ac.ke",
+            "category": "Operations Manager"
         }
     ]
 }
